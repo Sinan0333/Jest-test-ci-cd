@@ -1,0 +1,25 @@
+name: Jest Test
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set Up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Jest Tests
+      run: npm test
