@@ -2,8 +2,6 @@ const app = require('../app')
 const mongoose = require('mongoose')
 const {MongoMemoryServer} = require('mongodb-memory-server')
 const supertest = require('supertest')
-require('core-js');
-
 
 
 let mongoserver
