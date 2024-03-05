@@ -28,4 +28,4 @@ jobs:
       # run: npx jest
 
     - name: Run Jest Tests
-      run: node ./node_modules/jest/bin/jest.js
+      run: node jest.js
