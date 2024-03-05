@@ -1,8 +1,7 @@
-const app = require('../app')
-const mongoose = require('mongoose')
-const {MongoMemoryServer} = require('mongodb-memory-server')
-const supertest = require('supertest')
-
+import app from '../app';
+import mongoose from 'mongoose';
+import { MongoMemoryServer } from 'mongodb-memory-server';
+import supertest from 'supertest';
 
 let mongoserver
 beforeAll(async () => {
