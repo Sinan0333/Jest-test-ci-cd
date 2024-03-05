@@ -1,7 +1,6 @@
+// jest.config.js
 module.exports = {
-  testEnvironment: 'node',
   transform: {
-    '^.+\\.jsx?$': 'babel-jest'
+    '^.+\\.js$': 'babel-jest',
   },
-  moduleFileExtensions: ['js', 'jsx', 'json', 'node'],
 };
