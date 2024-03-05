@@ -16,13 +16,13 @@ jobs:
     - name: Set Up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18.17.0
+        node-version: 18.17.09
 
     - name: Install Dependencies
       run: npm install
 
     - name: Install DevDependencies
-      run: npm install --only=dev
+      run: npm install save-dev
 
     - name: Run Jest Tests
       run: npm test
