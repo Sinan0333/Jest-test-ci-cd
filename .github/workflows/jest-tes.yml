@@ -21,11 +21,5 @@ jobs:
     - name: Install Dependencies    
       run: npm install
 
-    - name: Install DevDependencies
-      run: npm install --save-dev jest
-
-    # - name: Run Jest Tests
-      # run: npx jest
-
     - name: Run Jest Tests
-      run: node jest.js
+      run: node ./node_modules/jest/bin/jest.js
