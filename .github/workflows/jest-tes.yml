@@ -21,5 +21,8 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
+    - name: Install DevDependencies
+      run: npm install --only=dev
+
     - name: Run Jest Tests
       run: npm test
