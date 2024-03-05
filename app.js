@@ -18,7 +18,7 @@ app.use(
     })
 );
 
-
+console.log('hi');
 app.use('/',userRoute)
 
 

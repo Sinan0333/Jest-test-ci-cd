@@ -13,7 +13,7 @@ const sample = async (req,res)=>{
 
 const signup = async (req,res)=>{
     try {
-console.log('jdijfd');
+
         const checkExist =await User.findOne({email:req.body.email})
         if(checkExist){
             res.status(409)
@@ -32,7 +32,6 @@ console.log('jdijfd');
         }
 
     } catch (error) {
-        console.log(error.message);
         res.status(500).json({ error: 'Internal Server Error' });
     }
 }
